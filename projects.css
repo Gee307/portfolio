@@ -1,0 +1,122 @@
+body {
+    background-color: rgba(168, 18, 18, 0.919);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Box container */
+.container {
+    background-color: rgba(123, 168, 18, 0.919);
+    border: 2px solid black;
+    box-shadow: white 4px 4px 10px;
+    border-radius: 30px;
+    padding: 30px;
+    width: 90vw;
+    height: 90vh;
+    box-sizing: border-box;
+    
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 10px 40px 10px;
+}
+
+.navbar{
+    background-color: rgba(56, 180, 242, 0.92);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 70px;
+    
+}
+
+.icon {
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 700px;
+}
+
+.icon:hover{
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.nav-links a {
+
+    text-decoration: none;
+    color: rgb(28, 73, 197);
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.nav-links a:hover{
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+    transform: scale(1.5);
+}
+.cont {
+    display: grid;
+    grid-margin-bottom: 100px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    height: 200px;
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    color :rgba(7, 71, 250, 1);
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+h1:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}

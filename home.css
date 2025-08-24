@@ -1,0 +1,130 @@
+/* Entire page */
+body {
+    background-color: rgba(168, 18, 18, 0.919);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Box container */
+.container {
+    background-color: rgba(123, 168, 18, 0.919);
+    border: 2px solid black;
+    box-shadow: white 4px 4px 10px;
+    border-radius: 30px;
+    padding: 30px;
+    width: 90vw;
+    height: 90vh;
+    box-sizing: border-box;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 10px 40px 10px;
+}
+
+.navbar{
+    background-color: rgba(56, 180, 242, 0.92);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 70px;
+    
+}
+
+.icon {
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 700px;
+}
+
+.icon:hover{
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.nav-links a {
+
+    text-decoration: none;
+    color: rgb(28, 73, 197);
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.nav-links a:hover{
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+    transform: scale(1.5);
+}
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    align-content: center;
+    margin: 20px 30px 30px 30px;
+}
+/* Main content */
+.content {
+    color: black;
+    flex: 1;
+    margin: 0px 20px 100px 20px;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.2;
+}
+
+.role{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2.5;
+    display: block;
+    font-family: cursive;
+
+}
+
+.desc{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: 400px;
+    width: 30vw;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-right: 50px;
+    
+}
+
+.pic img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+
+
+

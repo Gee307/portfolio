@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f0ec;
+  color: #111;
+}
+
+.detail{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/* Layout */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 60px;
+  background-color: #f4f0ec;
+}
+
+/* Image */
+.contact-image img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Content Box */
+.contact-content {
+  max-width: 600px;
+  flex: 1;
+}
+
+.contact-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Inner Box with Form and Info */
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-left: 2px solid #000;
+  padding-left: 40px;
+}
+
+/* Form */
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 250px;
+}
+
+.contact-form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 2px solid #000;
+  background-color: transparent;
+  padding: 8px 4px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 0 0 180px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .contact-content h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .contact-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
