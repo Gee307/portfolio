@@ -1,128 +1,131 @@
-/* Entire page */
 body {
-    background-color: rgba(168, 18, 18, 0.919);
     margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f0ec;
+    color: #111;
 }
 
-
-/* Box container */
+/* Container */
 .container {
-    background-color: rgba(123, 168, 18, 0.919);
-    border: 2px solid black;
-    box-shadow: white 4px 4px 10px;
-    border-radius: 30px;
-    padding: 30px;
-    width: 90vw;
-    height: 90vh;
-    box-sizing: border-box;
-    
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 35px 10px 40px 10px;
-}
-
-.navbar{
-    background-color: rgba(56, 180, 242, 0.92);
     width: 100%;
-    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
-    border-radius: 70px;
-    
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .icon {
-    color: blueviolet;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
     text-decoration: none;
-    margin-left: 20px;
-    margin-right: 700px;
-}
-
-.icon:hover{
-    color: rgba(255, 255, 255, 1);
-    transform: scale(1.1);
-    transition: transform 0.3s, color 0.3s;
 }
 
 .nav-links a {
-
-    text-decoration: none;
-    color: rgb(28, 73, 197);
     margin-left: 20px;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
     font-size: 16px;
-    
 }
 
-.nav-links a:hover{
-    color: rgba(255, 255, 255, 1);
+.nav-links a:hover {
+    color: #555;
     display: inline-block;
     transition: transform 0.3s, color 0.3s;
-    transform: scale(1.5);
+    transform: scale(1.15);
 }
-.intro{
+
+/* Intro Section */
+.intro {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
     align-items: center;
-    gap: 20px;
-    align-content: center;
-    margin: 20px 30px 30px 30px;
+    justify-content: center;
+    align-content: centre;
+    border: 2px solid black;
+    width: 70vw;
+    height: 70vh;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 30px;
+    padding: 20px;
 }
-/* Main content */
+
+/* Text Content */
 .content {
-    color: black;
     flex: 1;
-    margin: 0px 20px 100px 20px;
+    max-width: 600px;
 }
 
 .content h1 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.2;
+    font-size: 72px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #111;
 }
 
-.role{
-    font-size: 25px;
+.role {
+    font-size: 24px;
     font-weight: 600;
-    line-height: 2.5;
+    margin-bottom: 15px;
     display: block;
-    font-family: cursive;
-
+    color: #444;
 }
 
-.desc{
-    font-size: 20px;
-    margin-top: 20px;
+.desc {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
 }
 
-img{
-    max-width: 100%;
-    height: 400px;
-    width: 30vw;
-    border-radius: 20px;
-    margin-left: 60px;
-    margin-right: 50px;
-    
+/* Profile Image */
+.pic img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+
+.info{
+    border: 2px solid black;
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 30px;
+    padding: 20px;
 }
 
-.pic img:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 48px;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .pic img {
+        max-width: 90%;
+    }
 }
 
 
