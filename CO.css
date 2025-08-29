@@ -6,6 +6,37 @@ body {
   color: #111;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #555;
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+    transform: scale(1.15);
+}
+
 .detail{
     font-weight: 600;
     font-size: 16px;
@@ -22,7 +53,7 @@ body {
   background-color: #f4f0ec;
   align-items: space-between;
   content: center;}
-/* Image */
+Image
 .contact-image img {
   width: 400px;
   height: 500px;
@@ -109,9 +140,22 @@ body {
 }
 /* Responsive */
 @media (max-width: 768px) {
+
+    .container {
+        padding: 30px 10px 0px 20px;
+    }
+
+  .nav-links {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
   .contact-container {
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 0px 20px;
   }
 
   .contact-box {
