@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f0ec;
+    color: #111;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #555;
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+    transform: scale(1.15);
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto 40px;
+}
+
+/* Text Content */
+.content {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 72px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.role {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+    color: #444;
+}
+
+.desc {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Profile Image */
+.pic img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Info Section */
+.info {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Medium Screens (Tablet) */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 48px;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pic img {
+        max-width: 90%;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .role {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .nav-links a {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+}

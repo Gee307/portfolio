@@ -1,0 +1,14 @@
+/* Particle background style */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind everything */
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+
+h1{
+  font-style: cursive;
+}
